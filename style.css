@@ -1,0 +1,173 @@
+body {
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 10px;
+  height: 44px;
+  justify-content: center;
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.primary {
+  background-color: #f4f5f9;
+  color: #af970a;
+}
+
+.secondary {
+  background-color: #fff;
+  color: #af970a;
+}
+
+.content {
+  background-color: #000000;
+  border: 1px solid #9d830f;
+  filter: drop-shadow(0px 0px 30px #c3b94f);
+  padding: 16px;
+  width: 90%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content__main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: start;
+}
+
+.section--results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section__title {
+  color: #ded039;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  height: 80px;
+}
+
+.section__title > span {
+  color: #ded039;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form__label {
+  color: #fbfbfb;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  background-color: transparent;
+  border: 1px solid #e8c918;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__input::placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.form__link {
+  color: #fefefe;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+}
+
+.friends__container, .prizeDraw__container {
+  border: 1px solid #e8c918;
+  border-radius: 8px;
+  padding: 12px;
+  color: #e8c918;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.friends__title, .prizeDraw__title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.page__image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 600px;
+    padding: 24px;
+  }
+
+  .button {
+    font-size: 18px;
+    max-width: 220px;
+  }
+
+  .form__buttons {
+    flex-direction: row;
+  }
+
+  .section__title {
+    font-size: 48px;
+  }
+
+  .form__input {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .friends__container, .prizeDraw__container {
+    font-size: 16px;
+  }
+}
